@@ -104,8 +104,8 @@ public class AppManager {
     }
 
     public void contactDeletion() {
-        wd.findElementByXPath("//*[@id=\"content\"]/form[2]/div[2]/input").click();
-
+       wd.findElementByXPath("//*[@id=\"content\"]/form[2]/div[2]/input").click();
+       wd.switchTo().alert().accept();
     }
 
     public void initContactModification() {
