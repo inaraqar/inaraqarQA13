@@ -1,0 +1,45 @@
+package com.telran.selenium.tests;
+
+import com.telran.selenium.tests.TestBase;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class Expert extends TestBase {
+    FirefoxDriver wd;
+    
+
+    
+    @Test
+    public void Expert() {
+        wd.get("http://localhost/addressbook/");
+        wd.findElement(By.id("LoginForm")).click();
+        wd.findElement(By.name("user")).click();
+        wd.findElement(By.name("user")).clear();
+        wd.findElement(By.name("user")).sendKeys("admin");
+        wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+        wd.findElement(By.name("user")).click();
+        wd.findElement(By.name("user")).clear();
+        wd.findElement(By.name("user")).sendKeys("admin");
+        wd.findElement(By.name("pass")).click();
+        wd.findElement(By.name("pass")).clear();
+        wd.findElement(By.name("pass")).sendKeys("secret");
+        wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+        if (!wd.findElement(By.id("9")).isSelected()) {
+            wd.findElement(By.id("9")).click();
+        }
+        wd.findElement(By.xpath("//div[@id='content']/form[2]/div[2]/input")).click();
+    }
+    
+
+}

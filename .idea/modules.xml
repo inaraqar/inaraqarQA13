@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox_main.iml" group="Sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sandbox_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sandbox_test.iml" group="Sandbox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrelloSelenium.iml" filepath="$PROJECT_DIR$/.idea/modules/TrelloSelenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrelloSelenium_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TrelloSelenium_main.iml" group="TrelloSelenium" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrelloSelenium_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TrelloSelenium_test.iml" group="TrelloSelenium" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests_main.iml" group="addressbookSeleniumTests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbookSeleniumTests_test.iml" group="addressbookSeleniumTests" />
+    </modules>
+  </component>
+</project>
