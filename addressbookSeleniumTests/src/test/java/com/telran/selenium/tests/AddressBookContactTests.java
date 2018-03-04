@@ -6,9 +6,9 @@ public class AddressBookContactTests extends TestBase {
      @Test
     public void addressBookContactCreation() {
 
-         app.getGroupHelper().initContactAddition();
-         app.getGroupHelper().fillContactForm();
-         app.getGroupHelper().submitTheForm();
+         app.getContactHelper().initContactAddition();
+         app.getContactHelper().fillContactForm();
+         app.getContactHelper().submitTheForm();
 
      }
 
@@ -16,8 +16,8 @@ public class AddressBookContactTests extends TestBase {
 
     public void addressBookContactDeletion(){
 
-         app.getGroupHelper().selectContact();
-         app.getGroupHelper().contactDeletion();
+         app.getContactHelper().selectContact();
+         app.getContactHelper().contactDeletion();
 
      }
 
@@ -25,9 +25,9 @@ public class AddressBookContactTests extends TestBase {
 
     public void addressBookContactModification(){
 
-         app.getGroupHelper().initContactModification();
-         app.getGroupHelper().changeContactDetails();
-         app.getGroupHelper().confirmContactModification();
+         app.getContactHelper().initContactModification();
+         app.getContactHelper().changeContactDetails();
+         app.getContactHelper().confirmContactModification();
      }
     }
 

@@ -8,7 +8,7 @@ public class AddressbookSeleniumTests extends TestBase {
     @Test
     public void addressBookSeleniumTest() {
 
-        app.goToGroupPage();
+        app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().initGroupCreation();
         app.getGroupHelper().fillGroupForm(new GroupData("groupName", "groupHeader", "groupFooter"));
         app.getGroupHelper().backToGroupsPage();
