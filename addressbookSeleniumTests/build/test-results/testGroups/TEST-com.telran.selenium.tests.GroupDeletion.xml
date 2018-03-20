@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.selenium.tests.GroupDeletion" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-18T23:07:34" hostname="INARA" time="1.414">
+  <properties/>
+  <testcase name="deletionGroup" classname="com.telran.selenium.tests.GroupDeletion" time="1.414"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

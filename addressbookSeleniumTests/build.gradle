@@ -11,6 +11,19 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'org.seleniumhq.selenium:selenium-java:3.9.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.11.0'
     compile 'org.testng:testng:6.14.2'
+
+
 }
+ task testGroups(type:Test) {
+     useTestNG {
+         suites 'src/test/resources/testng-groups.xml'
+     }
+
+
+     systemProperty('target', "${target}")
+ }
+
+
+

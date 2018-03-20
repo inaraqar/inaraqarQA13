@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.selenium.tests.GroupCreation" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-18T23:07:32" hostname="INARA" time="2.267">
+  <properties/>
+  <testcase name="addressBookCreationGroup" classname="com.telran.selenium.tests.GroupCreation" time="2.267"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

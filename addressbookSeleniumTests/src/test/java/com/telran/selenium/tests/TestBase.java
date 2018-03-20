@@ -1,20 +1,21 @@
 package com.telran.selenium.tests;
 
 import com.telran.selenium.appManager.AppManager;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.remote.BrowserType;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 
-    protected final AppManager app = new AppManager();
+    protected static AppManager app = new AppManager(System.getProperty("browser", BrowserType.FIREFOX));
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp() throws Exception {
         app.start();
 
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown() {
         app.stop();
     }

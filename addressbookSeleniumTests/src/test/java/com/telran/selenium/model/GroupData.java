@@ -1,17 +1,57 @@
 package com.telran.selenium.model;
 
-public class GroupData {
-    private final String groupName;
-    private final String groupHeader;
-    private final String groupFooter;
+import java.util.Objects;
 
-    public GroupData(String groupName, String groupHeader, String groupFooter) {
+public class GroupData {
+    private String groupName;
+    private String groupHeader;
+    private String groupFooter;
+
+
+
+
+    public GroupData withGroupName(String groupName) {
         this.groupName = groupName;
-        this.groupHeader = groupHeader;
-        this.groupFooter = groupFooter;
+        return this;
     }
 
-    public String getGroupName() {
+    public GroupData withGroupHeader(String groupHeader) {
+        this.groupHeader = groupHeader;
+        return this;
+    }
+
+    public GroupData withGroupFooter(String groupFooter) {
+        this.groupFooter = groupFooter;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "GroupData{" +
+                "groupName='" + groupName + '\'' +
+                ", groupHeader='" + groupHeader + '\'' +
+                ", groupFooter='" + groupFooter + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GroupData groupData = (GroupData) o;
+        return Objects.equals(groupName, groupData.groupName);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(groupName);
+    }
+
+
+
+    public String getGroupName()
+    {
         return groupName;
     }
 

@@ -2,18 +2,21 @@ package com.telran.selenium.appManager;
 
 import com.telran.selenium.model.GroupData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 
-public class GroupHelper {
+public class GroupHelper extends HelperBase {
 
-    FirefoxDriver wd;
+    WebDriver wd;
 
-    public GroupHelper(FirefoxDriver wd) {
+    public GroupHelper(WebDriver wd) {
+        super(wd);
         this.wd = wd;
+
     }
 
     public void backToGroupsPage() {
         wd.findElement(By.linkText("group page")).click();
+
     }
 
     public void initGroupCreation() {
@@ -27,6 +30,7 @@ public class GroupHelper {
         wd.findElement(By.name("group_footer")).clear();
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getGroupFooter());
         wd.findElement(By.name("submit")).click();
+
     }
 
 //    public void type(GroupData groupData) {
@@ -50,6 +54,23 @@ public class GroupHelper {
         wd.findElement(By.name("pass")).clear();
         wd.findElement(By.name("pass")).sendKeys(pass);
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+    }
+
+
+    
+    public int getGroupCount() {
+        return  wd.findElements(By.name("selected[]")).size();
+    }
+
+
+    public void selectGroup() {
+        click(By.name("selected[]"));
+    }
+
+
+
+    public void initGroupDeletion() {
+        click(By.name("delete"));
     }
 
 

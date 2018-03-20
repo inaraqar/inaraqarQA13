@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="Contacts">
+        <classes>
+            <class name="com.telran.selenium.tests.ContactCreation"/>
+            <class name="com.telran.selenium.tests.ContactModification"/>
+            <class name="com.telran.selenium.tests.ContactDeletion"/>
+        </classes>
+    </test>
+</suite>

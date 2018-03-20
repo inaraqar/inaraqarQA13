@@ -1,10 +1,5 @@
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.*;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
+import com.telran.course.TestBase;
+import org.testng.annotations.Test;
 
 public class TrelloLogIn extends TestBase {
 
