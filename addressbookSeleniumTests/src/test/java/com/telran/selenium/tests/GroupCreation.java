@@ -9,7 +9,10 @@ public class GroupCreation extends TestBase {
     public void addressBookCreationGroup() {
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().initGroupCreation();
-        app.getGroupHelper().fillGroupForm(new GroupData("groupName", "groupHeader", "groupFooter"));
+        app.getGroupHelper().fillGroupForm(new GroupData()
+                .withGroupName("name")
+                .withGroupFooter("footer")
+                .withGroupHeader("header"));
         app.getGroupHelper().backToGroupsPage();
     }
 

@@ -34,9 +34,9 @@ public class GroupDataGenerator {
         List<GroupData> groups = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             groups.add(new GroupData()
-                    .withGroupName(String.format("name %s", i))
-            .withGroupHeader(String.format("header %s", i))
-            .withGroupFooter(String.format("footer %s", i)));
+                    .withGroupName(String.format("groupName %s", i))
+            .withGroupHeader(String.format("groupHeader %s", i))
+            .withGroupFooter(String.format("groupFooter %s", i)));
 
 
         }
